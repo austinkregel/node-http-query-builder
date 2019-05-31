@@ -1,0 +1,22 @@
+{
+  "name": "@kbco/query-builder",
+  "version": "0.0.1",
+  "description": "A way to convert objects, and arrays into a query string for a url",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/austinkregel/node-http-query-builder.git"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/_mocha 'tests/**/*Test.js'",
+    "local-coverage": "./node_modules/.bin/nyc --reporter=html npm test"
+  },
+  "author": "Austin Kregel <github@austinkregel.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "assert": "^2.0.0",
+    "mocha": "^6.1.4",
+    "nyc": "^14.1.1"
+  },
+  "dependencies": {}
+}
