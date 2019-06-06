@@ -47,8 +47,8 @@ const testData = [
         }
     },
     {
-        url: '/api/users',
-        baseUrl: '/api/users',
+        url: '/api/empty-object',
+        baseUrl: '/api/empty-object',
         queryObject: {}
     },
     {
@@ -58,6 +58,13 @@ const testData = [
             filter: {
                 'posts.is_published': 'true',
             }
+        }
+    },
+    {
+        url: '/api/empty-includes',
+        baseUrl: '/api/empty-includes',
+        queryObject: {
+            include: []
         }
     },
     {
