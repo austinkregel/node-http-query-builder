@@ -1,6 +1,6 @@
 {
   "name": "@kbco/query-builder",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A way to convert objects, and arrays into a query string for a url",
   "main": "index.js",
   "repository": {
