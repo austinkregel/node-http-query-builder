@@ -33,6 +33,25 @@ const testData = [
         }
     },
     {
+        url: '/api/users?page=12',
+        baseUrl: '/api/users',
+        queryObject: {
+            page: 12
+        }
+    },
+    {
+        url: '/api/users?page=0',
+        baseUrl: '/api/users',
+        queryObject: {
+            page: 0
+        }
+    },
+    {
+        url: '/api/users',
+        baseUrl: '/api/users',
+        queryObject: {}
+    },
+    {
         url: '/api/users?filter[posts.is_published]=true',
         baseUrl: '/api/users',
         queryObject: {

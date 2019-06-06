@@ -4,7 +4,10 @@
  * @returns {string}
  */
 const formatUrlWithParts = (url, parts) => {
-    return url + (url.indexOf('?') === -1 ? '?' : '') + parts;
+    if (url.indexOf('?') === -1 && parts.length > 0) {
+        return url + '?'  + parts
+    }
+    return url + parts;
 }
 
 /**
@@ -30,7 +33,7 @@ const buildUrl = (base, options) => {
             }
         } else if (Array.isArray(possiblyNested)) {
             parts += encodeURI(key) + '=' + possiblyNested.join(',');
-        } else if (options[key] !== undefined && options[key].length > 0) {
+        } else if (options[key] !== undefined) {
             parts += (parts !== '' ? '&' : '') + (encodeURI(key) + '=' + encodeURI(options[key]));
         }
     }
