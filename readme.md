@@ -6,9 +6,7 @@
 </p>
 
 ## node-http-query-builder
-This package is meant to be paired with Spatie's [Laravel Query Builder](https://github.com/spatie/laravel-query-builder) or my [Laravel Abstract](https://github.com/austinkregel/laravel-abstract) package.
-
-Though neither package is required to be used with this one. This one just makes using those ones easier!
+I just wanted an easy way to convert objects into query strings. I was tired of not having a decent option...
 
 ### Installation
 ```bash
