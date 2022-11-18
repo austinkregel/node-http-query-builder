@@ -35,7 +35,7 @@ const buildUrl = (base, options) => {
             if (possiblyNested.length === 0) {
                 continue;
             }
-            parts += encodeURI(key) + '=' + possiblyNested.join(',');
+            parts += (parts !== '' ? '&' : '') + encodeURI(key) + '=' + possiblyNested.join(',');
         } else if (options[key] !== null && options[key] !== undefined && options[key] !== '') {
             parts += (parts !== '' ? '&' : '') + (encodeURI(key) + '=' + encodeURI(options[key]));
         }
